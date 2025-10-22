@@ -65,7 +65,7 @@ img {
 footer {
     background-color: rgb(255, 222, 227);
     text-align: center;
-    padding: 30px 20px;
+    padding: 20px 20px;
     border-top: 1px solid #e0b8c2;
     color: #333;
 }
@@ -107,7 +107,33 @@ footer::before {
     display: flex;
     gap: 10px;
     justify-content: center;
+   
 }
+
+.apper{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+footer .app1:hover {
+    color: #b66c87;
+    transition: 0.3s ease;
+    transform: scale(1.5);
+}
+footer .app2:hover {
+    color: #b66c87;
+    transition: 0.3s ease;
+    transform: scale(1.5);
+}
+footer .app3:hover {
+    color: #b66c87;
+    transition: 0.3s ease;
+    transform: scale(1.5);
+}
+
 
 
 /* Footer */

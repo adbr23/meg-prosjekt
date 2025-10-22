@@ -14,18 +14,17 @@
            display: flex;
            flex-direction: column;
            min-height: 50vh;
-      
        }
 
+     
 
        .flex-section {
            flex: 10;
-           /* flex-grow: 10; (vokser 10x raskere) */
            background-color: rgb(255, 228, 233);
-           min-height: 80%;
+           /* min-height: 40%; */
+           max-height: 300px;
            display: flex;
            gap: 10px;
-           margin-bottom: 120px;
            margin-top: 20px;
        }
 
@@ -33,24 +32,19 @@
        .content-a {
            flex: 1 1 60%;
            margin-left: 15px;
-
        }
 
-       .info1 {
-           margin-top: 20px;
-           margin-bottom: 20px;
+       .content-a>p {
+           line-height: 40px;
+           text-align: center;
        }
 
-       .info {
-           margin-top: 10px;
-           margin-bottom: 20px;
-       }
-
-       .content-a h2 {
-           margin-top: 15px;
+       .content-a>h2 {
+           margin-top: 25px;
+           margin-bottom: 15px;
            text-align: center;
            font-weight: bold;
-
+       
        }
 
        /* A */
@@ -69,22 +63,50 @@
        }
 
        .b1 {
-           margin-top: 30px;
+           margin-top: 20px;
            text-align: center;
        }
 
        .b1 img {
            aspect-ratio: 1/1;
            object-fit: cover;
+           padding: 10px;
+           max-height: 250px;
+           align-items: center;
+           margin: 0 auto;
        }
 
        .b1 p {
-           margin-top: 10px;
            margin-bottom: 10px;
        }
 
-
        /* B */
 
+       /* C */
+       .content-c {
+           text-align: center;
+           margin-bottom: 50px;
+           margin-top: 40px;
+           border: 2px solid lightpink;
+           padding: 20px;
+           margin: 20px 30px;
+           border-radius: 10px;
+       }
 
-   
+       .info1 {
+           margin-top: 20px;
+           margin-bottom: 20px;
+       }
+
+       .info {
+           margin-top: 10px;
+           margin-bottom: 20px;
+       }
+
+        .content-c>h2 {
+           margin-top: 15px;
+        
+           text-align: center;
+           font-weight: bold;
+       }
+       /* C */
