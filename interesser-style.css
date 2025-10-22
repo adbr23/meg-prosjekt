@@ -1,0 +1,55 @@
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 34px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+            gap: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            min-height: 55vh;
+            margin-bottom: 40px;
+        }
+
+        .grid-container>div {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: rgb(213, 174, 213);
+            border-radius: 10px;
+        }
+
+        .grid-container img {
+            width: 90%;
+            margin: 25px auto;
+            border-radius: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+
+        .grid-container p {
+            margin: 0 5px;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .grid-container img:hover{
+            transform: scale(1.1);
+            transition: 0.3s ease;
+        }
+
+        @media(width < 500px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "maling"
+                    "lese"
+                    "konsert"
+                    "reise";
+            }
+        }

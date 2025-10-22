@@ -1,0 +1,11 @@
+  .reise{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+        }
+
+        .reise>div{
+            height: 90px;
+            border: 2px black solid;
+        }
+
