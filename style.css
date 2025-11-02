@@ -11,6 +11,7 @@
 body {
     font-size: 16px;
     font-family: "Playfair Display", serif;
+    background-color: #fff2ee;
 }
 
 ol,
@@ -26,17 +27,16 @@ img {
 
 /* CSS reset */
 
-/* Navbar */
+/* NAVBAR */
 .nav {
-    background-color: rgb(255, 204, 212);
+    background-color: #e4908a;
     height: 60px;
     display: flex;
 }
 
-
 .nav-liste a {
     text-decoration: none;
-    color: rgb(143, 94, 124);
+    color: #FFD9CC;
     padding: 15px;
     font-size: 18px;
 }
@@ -49,40 +49,39 @@ img {
 .nav-liste a:hover {
     background-color: white;
     transition: 500ms;
-    height: 15px;
+    padding: 6px;
     border-radius: 8px;
-    color: rgb(255, 204, 212);
+    color: #e4908a;
 }
 
 .logo {
     margin-left: 5px;
 }
 
-/* Navbar */
+@media(width < 500px) {
+    .logo {
+        display: none;
+    }
+}
 
-/* Footer */
+/* NAVBAR */
+
+/* FOOTER */
 
 footer {
-    background-color: rgb(255, 222, 227);
+    background-color: #e4908a;
+    ;
     text-align: center;
     padding: 20px 20px;
-    border-top: 1px solid #e0b8c2;
-    color: #333;
+    border-top: 1px solid #cb5c64;
 }
 
 footer p {
     line-height: 30px;
 }
 
-footer a {
-    color: #555;
-    text-decoration: none;
-}
-
-
-
 footer .kontakt:hover {
-    color: #b66c87;
+    color: #cb5c64;
     transition: 0.3s ease;
     transform: scale(1.1);
 }
@@ -98,7 +97,7 @@ footer::before {
     display: block;
     width: 60px;
     height: 2px;
-    background-color: #e0b8c2;
+    background-color: #cb5c64;
     margin: 0 auto 15px auto;
     border-radius: 2px;
 }
@@ -107,10 +106,10 @@ footer::before {
     display: flex;
     gap: 10px;
     justify-content: center;
-   
+
 }
 
-.apper{
+.apper {
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -119,21 +118,437 @@ footer::before {
 }
 
 footer .app1:hover {
-    color: #b66c87;
+    color: #cb5c64;
     transition: 0.3s ease;
     transform: scale(1.5);
 }
+
 footer .app2:hover {
-    color: #b66c87;
+    color: #cb5c64;
     transition: 0.3s ease;
     transform: scale(1.5);
 }
+
 footer .app3:hover {
-    color: #b66c87;
+    color: #cb5c64;
     transition: 0.3s ease;
     transform: scale(1.5);
 }
+/* FOOTER */
+/* INDEX */
+       .intro>h1 {
+           text-align: center;
+           margin-top: 40px;
+           margin-bottom: 10px;
+           font-weight: bold;
+       }
 
+       .intro p {
+           text-align: center;
+           margin-bottom: 30px;
+       }
 
+       main {
+           display: flex;
+           flex-direction: column;
+           min-height: 50vh;
+           max-width: 1200px;
+           margin: 0 auto;
+           padding: 20px;
+       }
 
-/* Footer */
+       .flex-section {
+           flex: 10;
+           background-color: #a0445d;
+           max-height: 300px;
+           display: flex;
+           gap: 10px;
+           margin-top: 20px;
+           margin-bottom: 80px;
+       }
+
+       @media(width<500px){
+        .flex-section{
+            flex-wrap: wrap;
+        }
+
+        .content-c{
+            margin-top: 300px;
+        }
+       }
+       /* A */
+       .content-a {
+           flex: 1 1 60%;
+           margin-left: 15px;
+       }
+
+       .content-a>p {
+           line-height: 40px;
+           text-align: center;
+       }
+
+       .content-a>h2 {
+           margin-top: 25px;
+           margin-bottom: 15px;
+           text-align: center;
+           font-weight: bold;
+       }
+
+       /* A */
+
+       /* B */
+       .content-b {
+           flex: 1 1 40%;
+           display: flex;
+           flex-direction: column;
+           background-color: rgb(111, 35, 63);
+           gap: 10px;
+       }
+
+       .content-b>* {
+           flex: 1;
+       }
+
+       .b1 {
+           margin-top: 20px;
+           text-align: center;
+       }
+
+       .b1 img {
+           aspect-ratio: 1/1;
+           padding: 10px;
+           max-height: 250px;
+           margin: 0 auto;
+           max-width: 343.6px;
+           min-width: 343.6px;
+       }
+
+       .b1-info p {
+           margin-bottom: 10px;
+           text-align: center;
+           margin-top: -12px;
+           color: #FFD9CC;
+       }
+
+       /* B */
+
+       /* C */
+       .content-c {
+           text-align: center;
+           border: 2px solid rgb(111, 35, 63);
+           padding: 20px;
+           margin-bottom: 100px;
+           margin-left: 40px;
+           margin-right: 40px;
+           border-radius: 10px;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.341);
+           /* HJEØP */
+
+       }
+
+       .info-c1 {
+           margin-top: 20px;
+           margin-bottom: 20px;
+       }
+
+       .info-c {
+           margin-top: 10px;
+           margin-bottom: 20px;
+       }
+
+       .content-c>h2 {
+           margin-top: 15px;
+           text-align: center;
+           font-weight: bold;
+       }
+
+       /* C */
+/* INDEX */
+
+/* TIMEPLAN */
+.timeplan {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.timeplan * {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.timeplan th,
+.info-tp {
+    font-weight: bold;
+}
+
+.h1-timeplan {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: #e4908a;
+}
+
+.timeplan {
+    margin-bottom: 250px;
+}
+
+.blank {
+    background-color: white;
+}
+
+.info-tp {
+    background-color: rgb(243, 233, 255);
+}
+
+.dager {
+    background-color: rgb(227, 209, 248);
+}
+
+.kjemi {
+    background-color: rgb(212, 249, 198);
+}
+
+.fysikk {
+    background-color: rgb(168, 230, 207);
+}
+
+.it {
+    background-color: rgb(210, 245, 233);
+}
+
+.norsk {
+    background-color: rgb(251, 209, 209);
+}
+
+.historie {
+    background-color: rgb(249, 246, 195);
+}
+
+.spansk {
+    background-color: rgb(250, 217, 193);
+}
+
+.matte {
+    background-color: rgb(201, 247, 249);
+}
+
+.gym {
+    background-color: rgb(212, 218, 247);
+}
+
+.klassetime {
+    background-color: rgb(186, 225, 255);
+}
+
+.spising {
+    background-color: blanchedalmond;
+}
+
+.parodd {
+    background-color: rgb(249, 244, 255);
+}
+/* TIMEPLAN */
+/* INTERESSER */
+.h2-int {
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #cb5c64;
+}
+
+.grid-container-int {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 20px;
+    min-height: 35vh;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.grid-container-int>div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #FFD9CC;
+    border-radius: 10px;
+}
+
+.grid-container-int img {
+    width: 90%;
+    margin: 25px auto;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.grid-container-int .h3-int {
+    margin-bottom: 15px;
+}
+
+.grid-container-int img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+@media(width < 500px) {
+    .grid-container-int {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "maling"
+            "lese"
+            "konsert"
+            "reise";
+    }
+}
+
+.oval {
+    background-color: #FFD9CC;
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
+    margin-top: 150px;
+}
+
+.info-int {
+    background-color: #FFD9CC;
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
+    text-align: center;
+    align-items: center;
+}
+
+.info-int p {
+    padding: 15px;
+}
+
+.info-int .h4-int {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #cb5c64;
+}
+
+.info-int img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.info-int2 {
+    display: flex;
+    max-width: 70%;
+}
+
+.reise2 {
+    margin-bottom: 40px;
+}
+
+@media(width < 500px) {
+    .info-int img {
+        display: none;
+    }
+}
+/* INTERESSER */
+/* BILDEGALLERI */
+.overskrift {
+    display: flex;
+    justify-content: center;
+}
+
+.h2-bg {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 120px;
+    font-size: 35px;
+    color: #e4908a;
+    border: solid 2px #cb5c64;
+    padding: 20px;
+    width: 600px;
+    border-radius: 8px;
+    background-color: #f4dadb;
+}
+
+.collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 10px;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.bilder {
+    margin-bottom: 80px;
+}
+
+.bred1 {
+    grid-column: 1/3;
+}
+
+.bred2 {
+    grid-column: 2/4;
+}
+
+.lengre1 {
+    grid-row: 3/5;
+}
+
+.lengre2 {
+    grid-row: 12/14;
+    grid-column: 3/4;
+}
+
+.lengre3 {
+    grid-row: 9/11;
+    grid-column: 2/3;
+}
+
+.lengre4 {
+    grid-row: 16/18;
+}
+
+.lengre5 {
+    grid-row: 16/18;
+    grid-column: 3/4;
+}
+
+.kvadratisk1 {
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.kvadratisk2 {
+    grid-column: 2/4;
+    grid-row: 7/9;
+}
+
+.kvadratisk3 {
+    grid-column: 1/3;
+    grid-row: 11/13;
+}
+
+.kvadratisk4 {
+    grid-column: 1/3;
+    grid-row: 14/16;
+}
+
+/* BILDEGALLERI */
+

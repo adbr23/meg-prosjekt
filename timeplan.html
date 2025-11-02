@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timeplan</title>
 
-    <link rel="stylesheet" href="timeplan-style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -28,51 +27,80 @@
     </header>
     <!-- NAVBAR -->
 
-    <main>
-        <section>
-            <h1>Timeplan, Adele 2stc</h1>
-            <div class="grid-container">
-                <div class="tid1">Tidspunkter</div>
-                <div class="item1">Mandag</div>
-                <div class="item2">Tirsdag</div>
-                <div class="item3">Onsdag</div>
-                <div class="item4">Torsdag</div>
-                <div class="item5">Fredag</div>
-                <div class="tid2">08:15-09:50</div>
-                <div class="item6">Kjemi</div>
-                <div class="item7">IT</div>
-                <div class="item8"></div>
-                <div class="item9">Spansk</div>
-                <div class="item10">Kjemi</div>
-                <div class="item11">Fysikk</div>
-                <div class="tid3">10:00-11:35</div>
-                <div class="item12">Fysikk</div>
-                <div class="item13">Matte R1</div>
-                <div class="item14">Norsk</div>
-                <div class="item15">Historie</div>
-                <div class="item16">IT</div>
-                <div class="tid4">11:35-12:20</div>
-                <div class="item17">Spising</div>
-                <div class="tid5">12:20-13:55</div>
-                <div class="item18">Norsk</div>
-                <div class="item19">Gym</div>
-                <div class="item20">IT</div>
-                <div class="item21">Matte R1</div>
-                <div class="item22">Spansk</div>
-                <div class="tid6">13:55-15:40</div>
-                <div class="item23">Klassens time</div>
-                <div class="item24">Matte R1</div>
-                <div class="item25">Kjemi</div>
-                <div class="item26"></div>
-                <div class="item27"></div>
-                <div class="item28">Fysikk</div>
-                <div class="item29"></div>
-            </div>
-        </section>
+    <section>
+        <h1 class="h1-timeplan">Timeplan, Adele 2stc</h1>
+        <table class="timeplan">
+            <thead>
+                <tr>
+                    <th class="dager">Tidspunkter</th>
+                    <th colspan="2" class="dager">Mandag</th>
+                    <th colspan="2" class="dager">Tirsdag</th>
+                    <th colspan="2" class="dager">Onsdag</th>
+                    <th colspan="2" class="dager">Torsdag</th>
+                    <th colspan="2" class="dager">Fredag</th>
+                </tr>
+            </thead>
 
-    </main>
+            <tbody>
+                <tr>
+                    <td class="info-tp"></td>
+                    <td class="parodd">Partall</td>
+                    <td class="parodd">Oddetall</td>
+                    <td class="parodd">Partall</td>
+                    <td class="parodd">Oddetall</td>
+                    <td class="parodd">Partall</td>
+                    <td class="parodd">Oddetall</td>
+                    <td class="parodd">Partall</td>
+                    <td class="parodd">Oddetall</td>
+                    <td class="parodd">Partall</td>
+                    <td class="parodd">Oddetall</td>
 
-     <!-- FOOTER -->
+                </tr>
+                <tr>
+                    <td class="info-tp">08:15–09:50</td>
+                    <td class="kjemi">Kjemi</td>
+                    <td class="it">IT</td>
+                    <td colspan="2" class="blank"></td>
+                    <td class="spansk" colspan="2">Spansk</td>
+                    <td class="kjemi" colspan="2">Kjemi</td>
+                    <td class="fysikk" colspan="2">Fysikk</td>
+                </tr>
+                <tr>
+                    <td class="info-tp">10:00–11:35</td>
+                    <td class="fysikk" colspan="2">Fysikk</td>
+                    <td class="matte" colspan="2">Matte R1</td>
+                    <td class="norsk" colspan="2">Norsk</td>
+                    <td class="historie" colspan="2">Historie</td>
+                    <td class="it" colspan="2">IT</td>
+                </tr>
+                <tr>
+                    <td class="info-tp">11:35–12:20</td>
+                    <td colspan="10" class="spising">Spising</td>
+                </tr>
+                <tr>
+                    <td class="info-tp">12:20–13:55</td>
+                    <td class="norsk" colspan="2">Norsk</td>
+                    <td class="gym" colspan="2">Gym</td>
+                    <td class="it" colspan="2">IT</td>
+                    <td class="matte" colspan="2">Matte R1</td>
+                    <td class="spansk" colspan="2">Spansk</td>
+                </tr>
+                <tr>
+                    <td class="info-tp">13:55–15:40</td>
+                    <td class="klassetime">Klassens time</td>
+                    <td class="matte">Matte R1</td>
+                    <td class="kjemi" colspan="2">Kjemi</td>
+                    <td colspan="2" class="blank"></td>
+                    <td class="blank"></td>
+                    <td class="fysikk">Fysikk</td>
+                    <td colspan="2" class="blank"></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
         <p class="takk">Takk for at du besøkte siden min! 😊</p>
         <p>Adele © 2025</p>
